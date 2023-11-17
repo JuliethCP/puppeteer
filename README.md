@@ -13,6 +13,9 @@ En este documento, se explicará cómo implementar un algoritmo de web scrapping
     ```bash
     npm install
     ```
+    ```bash
+    npx playwright install
+    ```
 3. **Generar una clave de licencia:**
 Primero, genera una clave de licencia para el SDK de MorphCast aquí [Morphcast SDK](https://www.morphcast.com/sdk-licence-request/)  Luego, intercambie la clave en:
     ```bash
