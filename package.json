@@ -1,0 +1,15 @@
+{
+  "name": "puppeter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.39.0",
+    "puppeteer": "^20.9.0"
+  }
+}
