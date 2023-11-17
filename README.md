@@ -15,16 +15,15 @@ En este documento, se explicará cómo implementar un algoritmo de web scrapping
     ```
 3. **Generar una clave de licencia:**
 Primero, genera una clave de licencia para el SDK de MorphCast aquí [Morphcast SDK](https://www.morphcast.com/sdk-licence-request/)  Luego, intercambie la clave en:
-   ```bash
-    const textoAEscribir = '3afd07bfe6e9b3aed20a3ea33a4656b6cc83a134bedc';
-```
+    ```bash
+     const textoAEscribir = '3afd07bfe6e9b3aed20a3ea33a4656b6cc83a134bedc';
+    ```
    
     
 
 ## Uso
 
 1. **Iniciar el algoritmo:**
-
 
 ```bash
 node playwright.js
