@@ -77,13 +77,25 @@ async function navigateWebPage(context, page, videoPath, counter) {
 
   await page.waitForTimeout(60000);
 
-  const [download] = await Promise.all([
+  try {
+    const [jsonDownload] = await Promise.all([
+      page.waitForEvent('download', { timeout: 60000 }), // Ajusta el tiempo de espera según sea necesario
+      clickButtonByText(page, ' Download JSON '),
+    ]);
+    const nuevoJsonNombre = `informeJSON${counter}.json`;
+    await jsonDownload.saveAs(path.join(os.homedir(), 'Downloads', nuevoJsonNombre));
+  } catch (error) {
+    console.error('Error al descargar el archivo JSON:', error);
+  }
+
+   // Descargar el archivo PDF
+   const [pdfDownload] = await Promise.all([
     page.waitForEvent('download'),
     clickButtonByText(page, ' Download Dashboard PDF Report '),
   ]);
 
-  const nuevoNombre = `informe${counter}.pdf`;
-  await download.saveAs(path.join(os.homedir(), 'Downloads', nuevoNombre));
+  const nuevoPdfNombre = `informePDF${counter}.pdf`;
+  await pdfDownload.saveAs(path.join(os.homedir(), 'Downloads', nuevoPdfNombre));
 }
 
 // Function to click a button by text content

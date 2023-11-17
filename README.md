@@ -32,3 +32,5 @@ node playwright.js
 Esto abrirá la aplicación Chromium que es controlada por el algoritmo y empezará a analizar los video disponibles en Descargas y posteriormente a descargar los informes sobre el análisis emocional de los videos.
 
 
+## Elementos a tener en cuenta
+En el proceso de automatización de la página de MorphCast, se quedará abierta una ventana para elegir el video a analizar, SOLO se debe IGNORAR o CERRARLA manualmente, ya que el algoritmo no puede cerrarla automáticamente.
