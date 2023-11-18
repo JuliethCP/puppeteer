@@ -37,9 +37,10 @@ Esto abrirá la aplicación Chromium que es controlada por el algoritmo y empeza
 
 ## Elementos a tener en cuenta
 En el proceso de automatización de la página de MorphCast, se quedará abierta una ventana para elegir el video a analizar, SOLO se debe IGNORAR o CERRARLA manualmente, ya que el algoritmo no puede cerrarla automáticamente.
-![image](https://github.com/JuliethCP/puppeteer/assets/61554258/71764c87-73b1-4251-b673-fb5e100841cc)
 
 **En caso de Optener este error, hacer lo siguiente**
+![image](https://github.com/JuliethCP/puppeteer/assets/61554258/71764c87-73b1-4251-b673-fb5e100841cc)
+
 1. **Abrir el Visual Studio como Administrador **
 2. **Correr el siguiente codigo**
  ```bash
