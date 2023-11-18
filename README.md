@@ -38,7 +38,7 @@ Esto abrirá la aplicación Chromium que es controlada por el algoritmo y empeza
 ## Elementos a tener en cuenta
 En el proceso de automatización de la página de MorphCast, se quedará abierta una ventana para elegir el video a analizar, SOLO se debe IGNORAR o CERRARLA manualmente, ya que el algoritmo no puede cerrarla automáticamente.
 
-**En caso de Optener este error**
+**En caso de obtener este error**
 ![image](https://github.com/JuliethCP/puppeteer/assets/61554258/71764c87-73b1-4251-b673-fb5e100841cc)
 hacer lo siguiente:
 1. **Abrir el Visual Studio como Administrador**
@@ -58,7 +58,7 @@ Vuelva a ejecutar el comando para verificar que todo funcione
 ```bash
 node playwright.js
 ```
-
+Si todo funciona correctamente debería abrirse una ventana dde Chromium ejecutando el código.
 
 
 
